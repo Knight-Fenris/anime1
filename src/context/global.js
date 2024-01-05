@@ -95,7 +95,7 @@ export const GlobalContextProvider = ({children}) =>{
         dispatch({type: GET_AIRING_ANIME, payload: data.data})
     }
 
-    //search
+    //search`
     const searchAnime = async(anime)=>{
         dispatch({type:LOADING})
         const response = await fetch(`${baseUrl}/anime?q=${anime}&order_by=popularity&sort=asc`)
